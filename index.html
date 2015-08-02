@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://unslider.com/unslider.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+	<!-- Header -->
+    <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="logo">
+    </a>
+
+    <ul class="nav list">
+        <li><a href="#">Aktuelles</a></li>
+        <li><a href="#">Philosophie</a></li>
+        <li><a class="show-drop-down" href="#">Besonderheiten</a>
+            <ul class="drop-down-menu">
+                <li><a href="#">Sublevel1</a></li>
+                <li><a href="#">Sublevel2</a></li>
+                <li><a href="#">Sublevel3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Partner</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Impressum</a></li>
+    </ul>
+
+	<!-- Slider -->
+    <div class="slider">
+        <ul>
+            <li><img src="images/img1.png" alt='img'></li>
+            <li><img src="images/img2.jpg" alt='img'></li>
+            <li><img src="images/img3.jpg" alt='img'></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul class="list">
+            <li><a href="#">&Auml;sthetik</a></li>
+            <li><a href="#">Kariestherapie</a></li>
+            <li><a href="#">Ganzheitliche&nbsp;Behandlungen</a></li>
+            <li><a href="#">kraniofaziale&nbsp;Orthop&auml;die</a></li>
+        </ul>
+    </div>
+    
+	<!-- Footer -->
+    <div class="content">
+        <div class="for-patients column">
+            <h3>Sehr geehrte Patienten,</h3>
+            <p>wir freuen uns, dass Sie sich f&uuml;r unsere Praxis f&uuml;r modeme Zahnheilkunde<br>interessieren -
+                herzlich willkommen!</p>
+            <p>Die Homepage soll Ihnen einen ersten Einblick in das Leistungsspektrum und<br>
+                die Behandlungsphilosophie vermitteln. Es wird Sie interessieren, wie schonend und sorgsam ein
+                Zahnarztbesuch sein kann.</p>
+            <p>Sie sind herzlich eingeladen, sich dei einem Besuch in meiner Praxis mit ihren Fragen und W&uuml;nschen
+                anzuvertauen.</p><br>
+            <p>Ihre Dr. Dr. G&uuml;nther Chmelitschek und Dr. Thomas Chmelitschek</p>
+        </div>
+        <div class="info column">
+            <h2>Sprechzeiten</h2>
+            <p>Zahnarztpraxis Dr. Dr. Chmelitschek
+                Stollstr. 6<br>83022 Rosenheim</p>
+            <p>Mo-Fr von 08:00-18:00 Uhr<br>
+                und nach Vereinbarung</p>
+        </div>
+        <p class="signature">Zahnarztpraxis Chmelitschek &copy; 2011</p>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.slider').unslider({
+            speed: 500,
+            delay: 3000,
+            keys: true,
+            fluid: true
+        });
+    });
+</script>
+
+</body>
+</html>
