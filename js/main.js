@@ -6,7 +6,7 @@
 			self = $(this).next('ul');
 			self.show();
 		}, function () {
-			self.hide();
+			self.hide(); 
 		});
 	});
 })(jQuery);
